@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="samplediv">Division1</div>
+	<div class="samplediv">Division2</div>
+
+
+</body>
+</html>
+<script type="text/javascript">
+
+	var divElement = document.querySelectorAll(".samplediv");
+		console.log(divElement[1]);
+	
+	var newElement = document.createElement("h2");
+	newElement.textContent="sample heading";
+	console.log(newElement);
+
+	newElement.setAttribute("id","heading");
+
+	newElement.setAttribute("class","heading");
+
+	newElement.classList.add("h2","h3","h4");
+
+	newElement.innerHTML="<h3>hello</h3>";
+
+	// remove html elements
+
+	divElement[1].remove(divElement[1]);
+	newElement[0].remove(newElement[0]);
+	// newElement.removeChild(newElement.childNodes[0]);
+
+	divElement[0].append(newElement);
+
+
+
+
+
+
+
+</script>

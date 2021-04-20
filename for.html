@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var array = [1,2,3,4,5,5,6];
+		document.writeln(array.length);
+
+//map is high order function
+//here item resprsents each and every element of array
+//index reprsents index of specific element
+		array.map((item,index)=>{
+			document.writeln(item+"is having the index:"+index);
+
+		})
+
+// if only pass one parameter in map function then item will be called
+
+array.map(item=>{
+	document.writeln(item);
+}) 
+
+// here 'i' is iterable 'array' is collection 'in' represents the index of array
+
+//in represents the index
+for (i in array){
+	document.writeln(i);
+	}
+	
+// of represents the values
+	for (i of array){
+	document.writeln(i);
+	}
+
+	// for each function
+	array.forEach(i=>{
+		document.writeln(i);
+	})
+
+	//here for each we can pass three parameters but for in or for of only two parameters
+
+	array.forEach((item,index,array)=>{
+		document.writeln(item+" is having the index:"+index+" in "+array);
+	})
+	</script>
+
+
+
+</body>
+</html>

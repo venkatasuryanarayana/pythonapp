@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function greet(){
+			return "hellow"
+		}
+		document.writeln(greet());
+
+		//when u r not used () in calling function(greet) it will return prototype of function.
+      
+       //defina a function with variables
+		function addition(){
+			let a=10;
+			let b=20;
+
+			return a+b;
+		}
+
+		document.writeln(addition());
+
+		function subtraction(n,m){
+			return n-m;
+ 		document.writeln(subtraction(3,4));
+
+
+    // we call this function is anonoumous why because the function does not have function name
+		var mul=function(n,m){
+			return n*m;
+		}
+		document.writeln(mul(3,4));
+
+		// var divide=(k,l)=>{
+		// 	return k/l;
+
+		// }
+		// document.writeln(divide(4,2));
+
+
+// here var sample is parent funtion and return() is a child function
+		var sample=()=>{
+			return ()=>{
+				return "hello";
+			}
+		}
+
+		let obj = sample();
+		//here obj holds function prototype
+		let obj1 = obj;
+		document.writeln(obj1);
+
+
+		var isEven=(n)=>n%2==0;
+		var finalResult=[2,3,4,5,6].filter(isEven);
+		document.writeln(finalresult);
+
+
+		let array=[1,2,3,4,5];
+		//map is higher order function it accepts another function as argument
+		array.map((i)=>{
+			console.log(i);
+		})
+
+		let array=[1,2,3,4,5];
+		//map is higher order function it accepts another function as argument
+		//here i refers value and j refers to index of array values
+		array.map((i,j)=>{
+			console.log(j);
+		})
+
+		//another high order function it accepts another function as argument
+
+		setTimeout(()=>{
+			console.log("hello");
+		},3000)
+	</script>
+
+</body>
+</html>

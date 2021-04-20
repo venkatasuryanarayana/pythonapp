@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	// var a=1;
+	// var b=2;
+	// var c=3;
+	// document.write(a);
+	// document.writeln(b);
+	// document.writeln(c);
+
+	//desctructing
+
+	// var [a,b,c]=[1,2,3]
+	// document.writeln(a,b,c);
+
+	// var [x,y] = [1,2,3,4,5,6];
+	// document.writeln(x);
+	// document.writeln(y);
+
+	//for example we are use spread it takes the rest of elements
+
+	// var [x,...y]=[1,2,3,4,5,6,7,8]
+	// document.writeln(x);
+	// document.writeln(y);
+
+	// function addition(a,...b){
+	// 	var sum=0;
+	// 	for (i of b){
+	// 		sum+=i;
+	// 	}
+	// 	document.writeln(sum);
+	// }
+
+	// addition(1,2,3,4,5,6)
+
+
+// Rest parameter must be last formal parameter
+	function sum(...a,b){
+		var sum=0
+		for(i of a){
+			sum+=i;
+
+		}
+		return sum;
+	}
+
+	// here we got erroe
+</script>
+</body>
+</html>
